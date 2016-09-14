@@ -2,7 +2,6 @@
 	margin: 0;
 	padding: 0;
 }
-
 html{
 	height: 100%;
 }
@@ -30,7 +29,7 @@ nav{
 }
 .acaunt{
 	float: left;
-	width: 60%;
+	width: 70%;
 }
 .photo{
 	float: left;
@@ -44,7 +43,6 @@ nav{
 }
 .data{
 	float: left;
-	width: 50%;
 	padding-left: 19px;
 	color: #fff;
 }
@@ -100,7 +98,7 @@ h1{
 	font-size: 41px;
 	color: #8cc34b;
 	position: absolute;
-    top: 1180px;
+    top: 975px;
     left: 32%;
     right: 30%;
     transition-delay: 2s; 
@@ -108,7 +106,9 @@ h1{
 
 }
 .about_wrap{
-	padding:0 10% 270px 10%; 
+	padding:0 10% 75px 10%; 
+	width: 80%;
+	float: left;
 }
 .wrapper{
 	width: 50%;
@@ -150,6 +150,7 @@ h1{
 	background: url('images/gplaypattern.png');
 	width: 80%;
 	padding: 0 10%;
+	float: left;
 }
 h2{
 	font-family: FiraSans-Medium;
@@ -168,6 +169,7 @@ h2{
 .wrap_courses{
 	width: 33.3%;
 	float: left;
+	/*height: 505px;*/
 }
 .course_detail{
 	width: 300px;
@@ -265,18 +267,39 @@ label:after{
 }
 /*-----------FINISH COURSES-----------*/
 
-/*-----------FINISH FOOTER-----------*/
+/*-----------START FOOTER-----------*/
 footer{
 	font-family: FiraSans-Regular;
 	background: #212121;
 	color: #b6b6b6;
 	text-align: center;
 	padding: 18px 0;
+	float: left;
+	width: 100%;
 
 }
 
-/*-----------START FOOTER-----------*/
+/*-----------FINISH FOOTER-----------*/
 .delay{
-	opacity: 0;
-	transition-delay: 1s;
+	/*opacity: 0;
+	transition-delay: 1s;*/
+	display: none;
+}
+
+/*-----------START MEDIA-----------*/
+@media screen and (max-width: 959px) {
+	.wrapper{
+	width: 100%}
+	.wrapper:first-child{
+	padding-bottom: 75px;}
+}
+
+@media screen and (max-width: 1145px) {
+	.wrap_courses{
+	width: 50%;}
+}
+
+@media screen and (max-width: 780px) {
+	.wrap_courses{
+	width: 100%;}
 }
